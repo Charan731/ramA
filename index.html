@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay 1 Rupee</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #333;
+        }
+        #balance {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Pay 1 Rupee to See How Many Rupees in This Account</h2>
+        
+        <p>CURREBT BLANCE:</p>
+        <div id="balance">0</div>
+
+        <form>
+            <script src="https://checkout.razorpay.com/v1/payment-button.js" 
+                data-payment_button_id="pl_Q1VPKynGzRQl5H" async>
+            </script>
+        </form>
+
+        <p class="error" id="error-msg"></p>
+    </div>
+
+    
+</body>
+</html>
